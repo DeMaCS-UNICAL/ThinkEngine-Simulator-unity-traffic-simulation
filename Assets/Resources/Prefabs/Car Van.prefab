@@ -26,6 +26,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.47, z: 0.83}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7118174905381296724}
   m_RootOrder: 2
@@ -57,6 +58,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.447, y: 0.232, z: 0.683}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7118174905978941458}
   m_RootOrder: 3
@@ -118,6 +120,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.467, y: 0.232, z: 0.683}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7118174905978941458}
   m_RootOrder: 2
@@ -179,6 +182,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.447, y: 0.232, z: -0.777}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7118174905978941458}
   m_RootOrder: 1
@@ -226,9 +230,9 @@ GameObject:
   - component: {fileID: 7118174905381296726}
   - component: {fileID: 7118174905381296729}
   - component: {fileID: 5963189199863415441}
-  - component: {fileID: 3189465408704005186}
   - component: {fileID: 8574735172144561579}
-  - component: {fileID: 4336050973844343620}
+  - component: {fileID: 5940875275307562911}
+  - component: {fileID: 3676865086450811808}
   m_Layer: 9
   m_Name: Car Van
   m_TagString: Untagged
@@ -246,6 +250,7 @@ Transform:
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -1.591, y: 1.4500003, z: -11.499}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7118174905145182446}
   - {fileID: 7118174905978941458}
@@ -328,96 +333,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.96, y: 0.85, z: 2.13}
   m_Center: {x: 0, y: 0.55, z: -0.07}
---- !u!114 &3189465408704005186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7118174905381296725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -508812344, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  previousGOName: Car Van
-  saved: 1
-  properties:
-  - myStrings:
-    - TrafficSimulation.VehicleAI
-    - x
-    Count: 2
-  - myStrings:
-    - TrafficSimulation.VehicleAI
-    - z
-    Count: 2
-  - myStrings:
-    - TrafficSimulation.VehicleAI
-    - vehicleStatus
-    - value__
-    Count: 3
-  - myStrings:
-    - TrafficSimulation.VehicleAI
-    - currentSegment
-    Count: 2
-  propertiesNames: []
-  configurationName: van
-  advancedConf:
-  - objType: 
-    toSave: []
-    propertyName:
-      myStrings: []
-      Count: 0
-    name: 
-    propertyType: 
-  - objType: 
-    toSave: []
-    propertyName:
-      myStrings: []
-      Count: 0
-    name: 
-    propertyType: 
-  - objType: 
-    toSave: []
-    propertyName:
-      myStrings: []
-      Count: 0
-    name: 
-    propertyType: 
-  - objType: 
-    toSave: []
-    propertyName:
-      myStrings: []
-      Count: 0
-    name: 
-    propertyType: 
-  operationPerProperty:
-  - Key:
-      myStrings:
-      - TrafficSimulation.VehicleAI
-      - x
-      Count: 2
-    Value: 0
-  - Key:
-      myStrings:
-      - TrafficSimulation.VehicleAI
-      - z
-      Count: 2
-    Value: 0
-  - Key:
-      myStrings:
-      - TrafficSimulation.VehicleAI
-      - vehicleStatus
-      - value__
-      Count: 3
-    Value: 0
-  - Key:
-      myStrings:
-      - TrafficSimulation.VehicleAI
-      - currentSegment
-      Count: 2
-    Value: 0
-  specificValuePerProperty: []
 --- !u!114 &8574735172144561579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -430,8 +345,7 @@ MonoBehaviour:
   m_Script: {fileID: 1086532457, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentIndex: 3
---- !u!114 &4336050973844343620
+--- !u!114 &5940875275307562911
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -443,6 +357,72 @@ MonoBehaviour:
   m_Script: {fileID: 417179157, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3676865086450811808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7118174905381296725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -508812344, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _savedProperties:
+  - myStrings:
+    - VehicleAI
+    Count: 1
+  - myStrings:
+    - VehicleAI
+    - x
+    Count: 2
+  - myStrings:
+    - VehicleAI
+    - z
+    Count: 2
+  - myStrings:
+    - VehicleAI
+    - vehicleStatus
+    Count: 2
+  - myStrings:
+    - VehicleAI
+    - vehicleStatus
+    - value__
+    Count: 3
+  - myStrings:
+    - VehicleAI
+    - currentSegment
+    Count: 2
+  _toMapProperties:
+  - myStrings:
+    - VehicleAI
+    - x
+    Count: 2
+  - myStrings:
+    - VehicleAI
+    - z
+    Count: 2
+  - myStrings:
+    - VehicleAI
+    - vehicleStatus
+    - value__
+    Count: 3
+  - myStrings:
+    - VehicleAI
+    - currentSegment
+    Count: 2
+  _configurationName: van
+  operationPerPropertyIndexes: 27efdbda8fadce9691adce9691cfd04dda4d2bd949e0e1c3
+  operationPerPropertyOperations: 000000000000000000000000000000000000000000000000
+  specificValuePerPropertyIndexes: 27efdbda8fadce9691adce9691cfd04dda4d2bd949e0e1c3
+  specificValuePerPropertyValues:
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
 --- !u!1 &7118174905458170425
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,6 +450,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.467, y: 0.232, z: -0.777}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7118174905978941458}
   m_RootOrder: 0
@@ -530,6 +511,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7118174905458170424}
   - {fileID: 7118174905216178815}
@@ -615,9 +597,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e573176e04888a947a9a7b761514096e, type: 3}
---- !u!4 &7118174905145182446 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400000, guid: e573176e04888a947a9a7b761514096e,
+--- !u!1 &7118174905144759498 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100004, guid: e573176e04888a947a9a7b761514096e,
     type: 3}
   m_PrefabInstance: {fileID: 7118174905144791662}
   m_PrefabAsset: {fileID: 0}
@@ -627,9 +609,9 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7118174905144791662}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &7118174905144759498 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 100004, guid: e573176e04888a947a9a7b761514096e,
+--- !u!4 &7118174905145182446 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: e573176e04888a947a9a7b761514096e,
     type: 3}
   m_PrefabInstance: {fileID: 7118174905144791662}
   m_PrefabAsset: {fileID: 0}
