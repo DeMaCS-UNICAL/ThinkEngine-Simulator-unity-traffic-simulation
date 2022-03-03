@@ -1,0 +1,25 @@
+%For runtime instantiated GameObject, only the prefab mapping is provided. Use that one substituting the gameobject name accordingly
+setOnActuator(inter1Act(intersection1,objectIndex(X),trafficSimulationIntersection(toSetRed(V)))):-objectIndex(inter1Act,X)
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(x(V))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(z(V))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(lightsNbr1(P,trafficSimulationSegment(id(V))))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(lightsNbr1(P,trafficSimulationSegment(x(V))))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(lightsNbr1(P,trafficSimulationSegment(z(V))))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(lightsNbr2(P,trafficSimulationSegment(id(V))))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(lightsNbr2(P,trafficSimulationSegment(x(V))))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(lightsNbr2(P,trafficSimulationSegment(z(V))))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(toSetRed(V))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(lastFrameSwitch(V))).
+%inter1(intersection1,objectIndex(X),trafficSimulationIntersection(frame(V))).
+%van(carVan,objectIndex(X),trafficSimulationVehicleAI(x(V))).
+%van(carVan,objectIndex(X),trafficSimulationVehicleAI(z(V))).
+%van(carVan,objectIndex(X),trafficSimulationVehicleAI(vehicleStatus(value(V)))).
+%van(carVan,objectIndex(X),trafficSimulationVehicleAI(currentSegment(V))).
+%long(carLong8,objectIndex(X),trafficSimulationVehicleAI(x(V))).
+%long(carLong8,objectIndex(X),trafficSimulationVehicleAI(z(V))).
+%long(carLong8,objectIndex(X),trafficSimulationVehicleAI(vehicleStatus(value(V)))).
+%long(carLong8,objectIndex(X),trafficSimulationVehicleAI(currentSegment(V))).
+%coupe(carCoupe8,objectIndex(X),trafficSimulationVehicleAI(x(V))).
+%coupe(carCoupe8,objectIndex(X),trafficSimulationVehicleAI(z(V))).
+%coupe(carCoupe8,objectIndex(X),trafficSimulationVehicleAI(vehicleStatus(value(V)))).
+%coupe(carCoupe8,objectIndex(X),trafficSimulationVehicleAI(currentSegment(V))).

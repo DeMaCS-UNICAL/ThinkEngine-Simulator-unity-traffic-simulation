@@ -6,6 +6,9 @@ TagManager:
   tags:
   - AutonomousVehicle
   - Waypoint
+  - Coupe
+  - Long
+  - Van
   layers:
   - Default
   - TransparentFX
