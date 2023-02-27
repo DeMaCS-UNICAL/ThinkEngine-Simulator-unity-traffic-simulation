@@ -230,9 +230,9 @@ GameObject:
   - component: {fileID: 7118174905381296726}
   - component: {fileID: 7118174905381296729}
   - component: {fileID: 5963189199863415441}
-  - component: {fileID: 8574735172144561579}
-  - component: {fileID: 5940875275307562911}
-  - component: {fileID: 3676865086450811808}
+  - component: {fileID: 1966451753063728520}
+  - component: {fileID: 7877584031726888000}
+  - component: {fileID: 4698927856607043286}
   m_Layer: 9
   m_Name: Car Van
   m_TagString: Untagged
@@ -333,7 +333,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.96, y: 0.85, z: 2.13}
   m_Center: {x: 0, y: 0.55, z: -0.07}
---- !u!114 &8574735172144561579
+--- !u!114 &1966451753063728520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -342,10 +342,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7118174905381296725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1086532457, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: 1423854136, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5940875275307562911
+--- !u!114 &7877584031726888000
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -354,10 +354,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 7118174905381296725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 417179157, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: -1306251035, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3676865086450811808
+--- !u!114 &4698927856607043286
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7118174905381296725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -508812344, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: -1612528518, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _savedProperties:
@@ -383,6 +383,10 @@ MonoBehaviour:
     Count: 2
   - myStrings:
     - VehicleAI
+    - currentSegment
+    Count: 2
+  - myStrings:
+    - VehicleAI
     - vehicleStatus
     Count: 2
   - myStrings:
@@ -390,10 +394,6 @@ MonoBehaviour:
     - vehicleStatus
     - value__
     Count: 3
-  - myStrings:
-    - VehicleAI
-    - currentSegment
-    Count: 2
   _toMapProperties:
   - myStrings:
     - VehicleAI
@@ -405,17 +405,19 @@ MonoBehaviour:
     Count: 2
   - myStrings:
     - VehicleAI
+    - currentSegment
+    Count: 2
+  - myStrings:
+    - VehicleAI
     - vehicleStatus
     - value__
     Count: 3
-  - myStrings:
-    - VehicleAI
-    - currentSegment
-    Count: 2
-  _configurationName: van
-  operationPerPropertyIndexes: 27efdbda8fadce9691adce9691cfd04dda4d2bd949e0e1c3
+  _configurationName: carVanSensor
+  isInvariant: 0
+  isFixedSize: 0
+  operationPerPropertyIndexes: 27efdbda8fadce9691adce9649e0e1c391cfd04dda4d2bd9
   operationPerPropertyOperations: 000000000000000000000000000000000000000000000000
-  specificValuePerPropertyIndexes: 27efdbda8fadce9691adce9691cfd04dda4d2bd949e0e1c3
+  specificValuePerPropertyIndexes: 27efdbda8fadce9691adce9649e0e1c391cfd04dda4d2bd9
   specificValuePerPropertyValues:
   - 
   - 

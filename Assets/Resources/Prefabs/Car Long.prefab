@@ -327,9 +327,9 @@ GameObject:
   - component: {fileID: 1809614700398524459}
   - component: {fileID: 1809614700398524456}
   - component: {fileID: 2696559846416544661}
-  - component: {fileID: 7004988798427095407}
-  - component: {fileID: 3279437351229485076}
-  - component: {fileID: 189351571784380071}
+  - component: {fileID: 5435031596841204407}
+  - component: {fileID: 2137440277825638524}
+  - component: {fileID: 848321176297369488}
   m_Layer: 9
   m_Name: Car Long
   m_TagString: Untagged
@@ -430,7 +430,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.88, y: 0.78, z: 2.11}
   m_Center: {x: 0, y: 0.51, z: -0.03}
---- !u!114 &7004988798427095407
+--- !u!114 &5435031596841204407
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -439,10 +439,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1809614700398524463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1086532457, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: 1423854136, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &3279437351229485076
+--- !u!114 &2137440277825638524
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -451,10 +451,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1809614700398524463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 417179157, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: -1306251035, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &189351571784380071
+--- !u!114 &848321176297369488
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -463,7 +463,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1809614700398524463}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -508812344, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: -1612528518, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _savedProperties:
@@ -480,10 +480,6 @@ MonoBehaviour:
     Count: 2
   - myStrings:
     - VehicleAI
-    - currentSegment
-    Count: 2
-  - myStrings:
-    - VehicleAI
     - vehicleStatus
     Count: 2
   - myStrings:
@@ -491,6 +487,10 @@ MonoBehaviour:
     - vehicleStatus
     - value__
     Count: 3
+  - myStrings:
+    - VehicleAI
+    - currentSegment
+    Count: 2
   _toMapProperties:
   - myStrings:
     - VehicleAI
@@ -502,17 +502,19 @@ MonoBehaviour:
     Count: 2
   - myStrings:
     - VehicleAI
-    - currentSegment
-    Count: 2
-  - myStrings:
-    - VehicleAI
     - vehicleStatus
     - value__
     Count: 3
+  - myStrings:
+    - VehicleAI
+    - currentSegment
+    Count: 2
   _configurationName: long
-  operationPerPropertyIndexes: 27efdbda8fadce9691adce9649e0e1c391cfd04dda4d2bd9
+  isInvariant: 0
+  isFixedSize: 0
+  operationPerPropertyIndexes: 27efdbda8fadce9691adce9691cfd04dda4d2bd949e0e1c3
   operationPerPropertyOperations: 000000000000000000000000000000000000000000000000
-  specificValuePerPropertyIndexes: 27efdbda8fadce9691adce9649e0e1c391cfd04dda4d2bd9
+  specificValuePerPropertyIndexes: 27efdbda8fadce9691adce9691cfd04dda4d2bd949e0e1c3
   specificValuePerPropertyValues:
   - 
   - 
