@@ -22706,6 +22706,8 @@ GameObject:
   - component: {fileID: 1636570481}
   - component: {fileID: 1636570479}
   - component: {fileID: 1636570482}
+  - component: {fileID: 1636570484}
+  - component: {fileID: 1636570483}
   m_Layer: 0
   m_Name: ThinkEngineUtility
   m_TagString: Untagged
@@ -22725,10 +22727,6 @@ MonoBehaviour:
   m_Script: {fileID: -459514393, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MIN_AVG_FPS: 58
-  MIN_CURRENT_FPS: 50
-  MAX_AVG_FPS: 60
-  MAX_CURRENT_FPS: 55
 --- !u!4 &1636570481
 Transform:
   m_ObjectHideFlags: 0
@@ -22756,6 +22754,34 @@ MonoBehaviour:
   m_Script: {fileID: -1327061906, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1636570483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636570478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1593840905, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1636570484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1636570478}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 748951336, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MIN_AVG_FPS: 58
+  MIN_CURRENT_FPS: 50
+  MAX_AVG_FPS: 60
+  MAX_CURRENT_FPS: 55
 --- !u!1001 &1640021414
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28481,12 +28507,12 @@ GameObject:
   - component: {fileID: 2021926310}
   - component: {fileID: 2021926311}
   - component: {fileID: 2021926312}
-  - component: {fileID: 2021926314}
-  - component: {fileID: 2021926319}
   - component: {fileID: 2021926318}
   - component: {fileID: 2021926317}
   - component: {fileID: 2021926316}
   - component: {fileID: 2021926315}
+  - component: {fileID: 2021926314}
+  - component: {fileID: 2021926313}
   m_Layer: 0
   m_Name: Intersection-1
   m_TagString: Untagged
@@ -28549,6 +28575,36 @@ MonoBehaviour:
   lastFrameSwitch: 0
   frame: 0
   currentRedLightsGroup: 1
+--- !u!114 &2021926313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021926309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -626081490, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableBrain: 1
+  debug: 1
+  maintainInputFile: 0
+  _chosenSensorConfigurations:
+  - inter1
+  - carVanSensor
+  - long
+  - coupe
+  AIFilesPath: C:/Users/deang/GIT/ThinkEngine-Simulator-unity-traffic-simulation/Assets/StreamingAssets\ThinkEngineer\ThinkEngine
+  AIFilesPrefix: Intersection-1
+  _AIFileTemplatePath: .\Assets\ThinkEngineer\ThinkEngine\Templates\ReactiveBrainTemplateIntersection-1.asp
+  prefabBrain: 0
+  solverEnum: 1
+  _executeReasonerOn: When Sensors are ready
+  specificAIFile: 0
+  globalAIFile: 0
+  _chosenActuatorConfigurations:
+  - inter1Act
 --- !u!114 &2021926314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28558,48 +28614,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021926309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1086532457, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2021926315
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021926309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -189814521, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableBrain: 1
-  debug: 0
-  maintainInputFile: 0
-  _chosenSensorConfigurations:
-  - inter1
-  - van
-  - long
-  - coupe
-  AIFilesPath: .\Assets\StreamingAssets\
-  AIFilesPrefix: Intersection-1
-  _AIFileTemplatePath: .\Assets\Resources\ActuatorBrainTemplateIntersection-1.asp
-  prefabBrain: 0
-  _executeReasonerOn: When Sensors are ready
-  specificAIFile: 0
-  globalAIFile: 0
-  _chosenActuatorConfigurations:
-  - inter1Act
---- !u!114 &2021926316
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2021926309}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: -928785524, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: 1985704856, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _savedProperties:
@@ -28617,7 +28632,7 @@ MonoBehaviour:
     Count: 2
   _configurationName: inter1Act
   _methodToApply: Always
---- !u!114 &2021926317
+--- !u!114 &2021926315
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28626,10 +28641,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021926309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -126178106, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: 1947222007, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2021926318
+--- !u!114 &2021926316
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28638,10 +28653,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021926309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -508812344, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: -1612528518, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _savedProperties:
+  - myStrings:
+    - Intersection
+    Count: 1
   - myStrings:
     - Intersection
     - x
@@ -28650,9 +28668,6 @@ MonoBehaviour:
     - Intersection
     - z
     Count: 2
-  - myStrings:
-    - Intersection
-    Count: 1
   - myStrings:
     - Intersection
     - lightsNbr1
@@ -28767,9 +28782,11 @@ MonoBehaviour:
     - frame
     Count: 2
   _configurationName: inter1
-  operationPerPropertyIndexes: 90438b9b46e609ec48e609ec0a10372e2c92b0d81114c1dd1314c1dd39b240469b64da1480e6ea1982e6ea19402dbefc91c8a3875949e491
+  isInvariant: 0
+  isFixedSize: 0
+  operationPerPropertyIndexes: 90438b9b0a10372e46e609ec48e609ec2c92b0d81114c1dd1314c1dd39b240469b64da1480e6ea1982e6ea19402dbefc91c8a3875949e491
   operationPerPropertyOperations: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
-  specificValuePerPropertyIndexes: 90438b9b46e609ec48e609ec0a10372e2c92b0d81114c1dd1314c1dd39b240469b64da1480e6ea1982e6ea19402dbefc91c8a3875949e491
+  specificValuePerPropertyIndexes: 90438b9b0a10372e46e609ec48e609ec2c92b0d81114c1dd1314c1dd39b240469b64da1480e6ea1982e6ea19402dbefc91c8a3875949e491
   specificValuePerPropertyValues:
   - 
   - 
@@ -28785,7 +28802,7 @@ MonoBehaviour:
   - 
   - 
   - 
---- !u!114 &2021926319
+--- !u!114 &2021926317
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -28794,7 +28811,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 2021926309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 417179157, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Script: {fileID: -1306251035, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2021926318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2021926309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1423854136, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &2022687500
